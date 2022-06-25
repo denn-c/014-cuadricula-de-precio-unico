@@ -1,0 +1,98 @@
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  background-color: var(--Grayish-Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1em;
+}
+
+.contenedor {
+  max-width: 42em;
+  background-color: var(--Light-Gray);
+  border-radius: 0.5em;
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.titulo {
+  font-size: 1.7rem;
+  color: var(--Cyan);
+  margin: 2.5rem;
+  margin-bottom: 1.3rem;
+}
+.subtitulo {
+  font-size: 1.2em;
+  margin: 0 2.5rem;
+  color: var(--Bright-Yellow);
+}
+.descripcion {
+  color: var(--Grayish-Blue);
+  margin: 1.1rem 2.5rem;
+}
+
+.articulo{
+  display: flex;
+}
+.seccion{
+  width: 50%;
+  padding: 1.5rem 2.5rem;
+  color: var(--Light-Gray);
+  min-width: 15em;
+}
+.seccion:first-child{
+  background-color: var(--Cyan);
+}
+.seccion:last-child{
+  background-color: #4ABEBD;
+}
+.seccion__precio{
+  font-weight: lighter;
+  color: rgb(131, 220, 226);
+}
+.seccion__dolar{
+  font-size: 2rem;
+  color: var(--Light-Gray);
+  font-weight: bold;
+}
+.seccion__acceso{
+  font-weight: lighter;
+}
+.seccion__registrarse{
+  display: block;
+  text-align: center;
+  background-color: var(--Bright-Yellow);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 1rem 0;
+  color: var(--Light-Gray);
+  border-radius: .5em;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+
+}
+.seccion__descripcion{
+  font-weight: lighter;
+  font-size: .95rem;
+}
+
+@media (max-width:500px) {
+
+  .contenedor{
+    max-width: 22em;
+  }
+  .articulo{
+    flex-direction: column;
+  }
+  .seccion{
+    width: 100%;
+  }
+}
